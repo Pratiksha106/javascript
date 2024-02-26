@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>Javascript</head>
+<title>Learn Javascript</title>
+
+<script>
+    function myFunction() {
+        document.getElementById('demo6').innerHTML = "Changed Pragraph.";
+    }
+
+</script>
+<script src="myScript.js"></script>
+
+<body>
+    <h2>Excersie 1</h2>
+    <!--Excercise 1-->
+    <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">Click me to display Date and
+        Time.</button>
+    <p id="demo"></p>
+    <!--Excercise 2-->
+    <h2>Excersie 2</h2>
+    <p id="demo1">JavaScript can change HTML content.</p>
+    <button type="button" onclick='document.getElementById("demo1").innerHTML= "Hello Javascript!"'>Click Me!</button>
+
+    <!--Excercise 3-->
+    <h2>Excersie 3</h2>
+    <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+    <button onclick="document.getElementById('demo2').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the
+        light</button>
+    <img id="demo2" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('demo2').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the
+        light</button>
+
+    <!--Excercise 4-->
+    <h2 id="demo3">Excersie 4</h2>
+    <p id="demo4">Click me to display Date and Time.</p>
+    <button type="button" onclick="document.getElementById('demo3').style.fontSize='35px'">Click Me</button>
+    <button type="button" onclick="document.getElementById('demo4').style.display='none'">Click Me</button>
+    <!--Excercise 5 Inline-->
+    <h2>Excersie 5</h2>
+    <p id="demo5"></p>
+    <script>
+        document.getElementById('demo5').innerHTML = "My First Javascript program";
+    </script>
+    <!--Excercise 6 Internal Js-->
+    <h2>Excersie 6</h2>
+    <p id="demo6">Old Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <!--Excercise 7 external Js-->
+    <h2>Excersie 7</h2>
+    <p id="test"></p>
+    <button type="button" onclick="myIndia()">India </button>
+    <p id="test2"></p>
+    <script src="D:\Javascript\scripts.js"></script>
+
+
+    <!--Excercise 8 external Js-->
+    <h2>Excercise 8</h2>
+
+    <p id="demo7">A Paragraph.</p>
+
+    <button type="button" onclick="myFunction1()">Try it</button>
+
+    <p>This example links to "myScript.js".</p>
+    <p>(myFunction is stored in "myScript.js")</p>
+    <!--Excercise 9 inner html-->
+    <h1>Excercise 9</h1>
+
+    <p id="demo9"></p>
+
+    <script>
+        document.getElementById("demo9").innerHTML = 5 + 6;
+    </script>
+    <!--Excercise 10 Document.write html-->
+    <h1>Excercise 10</h1>
+    <p>Hello everyone</p>
+    <p>Thank you for support</p>
+    <script>
+        document.write(2 + 4);
+        document.write("hello");
+    </script>
+    <!--Excercise 11 Document.write html-->
+    <h2>Excercise 11</h2>
+    <p>My first paragraph.</p>
+    <button type="button" onclick="document.write(5 + 6)">Try it</button>
+    <button type="button" onclick="write()">Click Here</button>
+    <!--Excercise 12 Document.write html-->
+    <h2>Excercise 12</h2>
+    <p>Window alert msg</p>
+    <script>
+        window.alert("Welcome to Javascript");
+    </script>
+    <!--Excercise 13 console html-->
+    <h2>Excercise 13</h2>
+    <p>console log</p>
+
+    <script>
+        console.log(4 + 6);
+    </script>
+</body>
+
+</html>

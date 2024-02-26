@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>Javascript</head>
+<title>Let Statement</title>
+
+<body>
+    <!--Excercise 15 Document.write html-->
+    <h2>Excercise 15</h2>
+    <p>A JavaScript program is a list of statements to be executed by a computer.</p>
+    <p id="let"></p>
+    <script>
+      let p, r, m;
+      p=2;
+      r=4;
+      m=p+r;
+      document.getElementById("let").innerHTML=
+      "The value of m is " + m + ".";
+    </script>
+    <p>JavaScript code blocks are written between { and }</p>
+
+    <button type="button" onclick="myFunction()">Click Me!</button>
+    
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        function myFunction() {
+          document.getElementById("demo1").innerHTML = "Hello Dolly!";
+          document.getElementById("demo2").innerHTML = "How are you?";
+        }
+        </script>
+        <!--Create var-->
+        <h2>Excercise 16 const</h2>
+        <p id="demo3"></p>
+        
+        <script>
+          try{
+            const pi=3.1444
+            pi=3.15;
+          }
+          catch (err){
+            document.getElementById("demo3").innerHTML=err;
+          }
+        </script>
+        <h2>Excercise 17 const</h2>
+        <p id="demo"></p>
+
+<script>
+// Create an Array:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Change an element:
+cars[0] = "Toyota";
+
+// Add an element:
+cars.push("Audi");
+
+// Display the Array:
+document.getElementById("demo").innerHTML = cars; 
+</script>
+const car
+  
+</body>
+
+</html>

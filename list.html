@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var myList = document.getElementById("myList");
+      var myList1 = document.getElementById("myList1");
+
+      var commonHref = "https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICTTMASA2024";
+
+      var topics = [
+        "Advancement in Heat and Mass Transfer",
+        "Experimental Fluid Mechanics and Computational Fluid Dynamics",
+        "Renewable and Sustainable Technologies",
+        "Non-Conventional Energy Generation and Managements",
+        "Development in Electric Vehicle (EV) Technologies",
+        "Hydrogen Generation and Utilization Technologies",
+        "Development in Battery and Energy Storage",
+        "Advanced Energy Systems",
+        "Optimization of Thermal, Flow and Turbo Machinery Systems",
+        "Autonomous driving",
+        "Propulsion and Power Systems for Ground, Air, and Space Vehicles",
+        "Mathematical Modelling, Analytical/Semi Analytical Methods for thermal systems"
+      ];
+
+      var topics2 = [
+        "hbbnfgn",
+        "ukmjh",
+        "R"
+      ];
+
+      topics.forEach(function(topic) {
+        // List 1
+        var listItem = document.createElement("li");
+        var anchor = document.createElement("a");
+        anchor.href = commonHref + "&topic=" + encodeURIComponent(topic); // Append topic to the URL
+        anchor.target = "_blank"; // Open link in a new tab
+        anchor.className = "custom-link";
+        anchor.innerHTML = '<i class="fa fa-chevron-circle-right" aria-hidden="true"></i> ' + topic;
+        listItem.appendChild(anchor);
+        myList.appendChild(listItem);
+      });
+
+      topics2.forEach(function(topic2) {
+        // List 2 (with different links)
+        var listItem1 = document.createElement("li");
+        var anchor1 = document.createElement("a");
+        anchor1.href = commonHref + "&topic1=" + encodeURIComponent(topic2); // Append topic to a different URL
+        anchor1.target = "_blank"; // Open link in a new tab
+        anchor1.className = "custom-link";
+        anchor1.innerHTML = '<i class="fa fa-chevron-circle-right" aria-hidden="true"></i> ' + topic2;
+        listItem1.appendChild(anchor1);
+        myList1.appendChild(listItem1);
+      });
+    });
+  </script>
+</head>
+<body>
+  <ul id="myList"></ul>
+  <h2>frb</h2>
+  <ul id="myList1"></ul>
+</body>
+</html>
